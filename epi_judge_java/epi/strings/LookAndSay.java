@@ -1,18 +1,18 @@
-package epi;
+package epi.strings;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
-public class IsStringPalindromic {
-  @EpiTest(testDataFile = "is_string_palindromic.tsv")
+public class LookAndSay {
+  @EpiTest(testDataFile = "look_and_say.tsv")
 
-  public static boolean isPalindromic(String s) {
+  public static String lookAndSay(int n) {
     // TODO - you fill in here.
-    return true;
+    return "";
   }
 
   public static void main(String[] args) {
     System.exit(
         GenericTest
-            .runFromAnnotations(args, "IsStringPalindromic.java",
+            .runFromAnnotations(args, "LookAndSay.java",
                                 new Object() {}.getClass().getEnclosingClass())
             .ordinal());
   }

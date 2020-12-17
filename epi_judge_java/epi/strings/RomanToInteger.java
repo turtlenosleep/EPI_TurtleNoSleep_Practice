@@ -1,18 +1,18 @@
-package epi;
+package epi.strings;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
-public class ConvertBase {
-  @EpiTest(testDataFile = "convert_base.tsv")
+public class RomanToInteger {
+  @EpiTest(testDataFile = "roman_to_integer.tsv")
 
-  public static String convertBase(String numAsString, int b1, int b2) {
+  public static int romanToInteger(String s) {
     // TODO - you fill in here.
-    return "";
+    return 0;
   }
 
   public static void main(String[] args) {
     System.exit(
         GenericTest
-            .runFromAnnotations(args, "ConvertBase.java",
+            .runFromAnnotations(args, "RomanToInteger.java",
                                 new Object() {}.getClass().getEnclosingClass())
             .ordinal());
   }

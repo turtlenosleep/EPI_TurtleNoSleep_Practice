@@ -1,12 +1,15 @@
-package epi;
+package epi.strings;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
 public class SpreadsheetEncoding {
   @EpiTest(testDataFile = "spreadsheet_encoding.tsv")
 
   public static int ssDecodeColID(final String col) {
-    // TODO - you fill in here.
-    return 0;
+    int result =0;
+    for(char ch:col.toCharArray()){
+      result = result*26 + (ch-'A') +1;
+    }
+    return result;
   }
 
   public static void main(String[] args) {
