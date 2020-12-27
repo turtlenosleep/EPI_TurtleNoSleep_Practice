@@ -598,7 +598,7 @@ problem_mapping = {
                 "total": 10008
             },
             "Java: ValidIpAddresses.java": {
-                "passed": 0,
+                "passed": 10008,
                 "total": 10008
             },
             "Python: valid_ip_addresses.py": {
@@ -612,7 +612,7 @@ problem_mapping = {
                 "total": 500
             },
             "Java: SnakeString.java": {
-                "passed": 0,
+                "passed": 500,
                 "total": 500
             },
             "Python: snake_string.py": {
@@ -626,7 +626,7 @@ problem_mapping = {
                 "total": 200
             },
             "Java: RunLengthCompression.java": {
-                "passed": 0,
+                "passed": 200,
                 "total": 200
             },
             "Python: run_length_compression.py": {
@@ -640,7 +640,7 @@ problem_mapping = {
                 "total": 835
             },
             "Java: SubstringMatch.java": {
-                "passed": 0,
+                "passed": 835,
                 "total": 835
             },
             "Python: substring_match.py": {
