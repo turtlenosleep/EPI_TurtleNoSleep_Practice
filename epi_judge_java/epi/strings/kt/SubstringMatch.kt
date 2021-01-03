@@ -21,9 +21,10 @@ object SubstringMatch {
         var hashS = 0L;
 
         for (i in s.indices) {
-            hashT = hashT * base + t[i].toInt();
-            hashS = hashS * base + s[i].toInt();
+            hashT = hashT * base + getValue(t[i]);
+            hashS = hashS * base + getValue(s[i]);
         }
+
 
         val power = base.toDouble().pow((n - 1).toDouble()).toLong();
 
@@ -33,11 +34,15 @@ object SubstringMatch {
             }
 
             if (i < t.length)
-                hashT = (hashT - t[i - n].toInt() * power) * base + t[i].toInt();
+                hashT = (hashT - getValue(t[i - n]) * power) * base + getValue(t[i]);
         }
 
 
         return -1;
+    }
+
+    private fun getValue(input: Char): Int {
+        return input - 'a' + 1;
     }
 
     private fun isEqual(s: String, t: String, start: Int, end: Int): Boolean {

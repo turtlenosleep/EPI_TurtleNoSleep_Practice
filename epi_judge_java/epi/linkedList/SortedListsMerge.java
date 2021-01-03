@@ -1,4 +1,5 @@
-package epi;
+package epi.linkedList;
+import epi.ListNode;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
 public class SortedListsMerge {
