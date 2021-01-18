@@ -778,7 +778,7 @@ problem_mapping = {
                 "total": 306
             },
             "Java: DeleteKthLastFromList.java": {
-                "passed": 0,
+                "passed": 306,
                 "total": 306
             },
             "Python: delete_kth_last_from_list.py": {
@@ -792,7 +792,7 @@ problem_mapping = {
                 "total": 203
             },
             "Java: RemoveDuplicatesFromSortedList.java": {
-                "passed": 0,
+                "passed": 203,
                 "total": 203
             },
             "Python: remove_duplicates_from_sorted_list.py": {
@@ -806,7 +806,7 @@ problem_mapping = {
                 "total": 507
             },
             "Java: ListCyclicRightShift.java": {
-                "passed": 0,
+                "passed": 507,
                 "total": 507
             },
             "Python: list_cyclic_right_shift.py": {
