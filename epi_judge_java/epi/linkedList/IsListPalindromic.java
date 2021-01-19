@@ -1,20 +1,19 @@
-package epi;
+package epi.linkedList;
+import epi.ListNode;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
+public class IsListPalindromic {
+  @EpiTest(testDataFile = "is_list_palindromic.tsv")
 
-import java.util.List;
-public class EvenOddListMerge {
-  @EpiTest(testDataFile = "even_odd_list_merge.tsv")
-
-  public static ListNode<Integer> evenOddMerge(ListNode<Integer> L) {
+  public static boolean isLinkedListAPalindrome(ListNode<Integer> L) {
     // TODO - you fill in here.
-    return null;
+    return true;
   }
 
   public static void main(String[] args) {
     System.exit(
         GenericTest
-            .runFromAnnotations(args, "EvenOddListMerge.java",
+            .runFromAnnotations(args, "IsListPalindromic.java",
                                 new Object() {}.getClass().getEnclosingClass())
             .ordinal());
   }
