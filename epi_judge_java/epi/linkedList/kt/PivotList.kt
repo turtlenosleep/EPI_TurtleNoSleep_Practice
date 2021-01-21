@@ -53,6 +53,8 @@ object PivotList {
         return v
     }
 
+
+    @JvmStatic
     @EpiTest(testDataFile = "pivot_list.tsv")
     @Throws(Exception::class)
     fun listPivotingWrapper(executor: TimedExecutor,

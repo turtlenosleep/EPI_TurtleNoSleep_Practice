@@ -26,10 +26,10 @@ object IsListPalindromic {
             fast = fast.next.next;
         }
 
-        var secondHalfHead:ListNode<Int>? = reverseSecondHalf(slow);
+        var secondHalfHead: ListNode<Int>? = reverseSecondHalf(slow);
         var firstHalfHead = L;
 
-        while (firstHalfHead != slow) {
+        while (secondHalfHead != null) {
             if (firstHalfHead!!.data != secondHalfHead!!.data) return false;
             firstHalfHead = firstHalfHead.next;
             secondHalfHead = secondHalfHead.next;

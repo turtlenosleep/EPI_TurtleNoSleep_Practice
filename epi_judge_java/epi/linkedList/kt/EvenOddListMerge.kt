@@ -25,14 +25,14 @@ object EvenOddListMerge {
         *
         * */
 
-        while(odd !=null && odd.next !=null){
-            even!!.next = even.next.next;
-            even = even.next;
-            odd.next = odd.next.next;
+        while(odd?.next != null){
+            even?.next = odd.next;
+            even = even?.next;
+            odd.next = even?.next;
             odd = odd.next;
         }
 
-        even!!.next = oddHead;
+        even?.next = oddHead;
 
         return L;
     }
