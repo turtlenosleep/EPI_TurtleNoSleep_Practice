@@ -1,18 +1,18 @@
-package epi;
+package epi.stack;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
-public class IsValidParenthesization {
-  @EpiTest(testDataFile = "is_valid_parenthesization.tsv")
+public class DirectoryPathNormalization {
+  @EpiTest(testDataFile = "directory_path_normalization.tsv")
 
-  public static boolean isWellFormed(String s) {
+  public static String shortestEquivalentPath(String path) {
     // TODO - you fill in here.
-    return true;
+    return "";
   }
 
   public static void main(String[] args) {
     System.exit(
         GenericTest
-            .runFromAnnotations(args, "IsValidParenthesization.java",
+            .runFromAnnotations(args, "DirectoryPathNormalization.java",
                                 new Object() {}.getClass().getEnclosingClass())
             .ordinal());
   }
