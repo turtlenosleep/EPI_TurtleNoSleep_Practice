@@ -9,7 +9,7 @@ import kotlin.math.max
 
 object IsTreeNotKBalanced {
 
-    class NodeWrapper(val node: BinaryTreeNode<Int>?, val depth: Int, var isBalanced: Boolean) {
+    class NodeWrapper(val node: BinaryTreeNode<Int>?, val childCount: Int) {
 
     }
 
@@ -22,18 +22,17 @@ object IsTreeNotKBalanced {
     }
 
     private fun getNotKBalanced(node: BinaryTreeNode<Int>?, k: Int): NodeWrapper {
-        if (node == null) return NodeWrapper(node, 0, false);
+        if (node == null) return NodeWrapper(node, 0);
 
         val left = getNotKBalanced(node.left, k);
-        if (!left.isBalanced) return left;
+        if (left.childCount > k) return left;
 
         val right = getNotKBalanced(node.right, k);
-        if (!right.isBalanced) return right;
+        if (right.childCount > k) return right;
 
-        val depth = max(left.depth, right.depth) + 1
-        val isBalanced = abs(left.depth - right.depth) <= k
+        val count = left.childCount + right.childCount
 
-        return NodeWrapper(node, depth, isBalanced)
+        return NodeWrapper(node, count);
     }
 
 

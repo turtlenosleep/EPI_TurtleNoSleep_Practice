@@ -1,4 +1,5 @@
-package epi;
+package epi.tree;
+import epi.BinaryTree;
 import epi.test_framework.BinaryTreeUtils;
 import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
